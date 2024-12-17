@@ -1,108 +1,24 @@
 <!DOCTYPE html>
-<html lang="pt-br">
 <head>
-<title>Página Teste</title>
+<title>Página Teste de Formulario</title>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-/* Estiliza o cabeçalho */
-header {
-  background-color: #1dcede;
-  padding: 30px;
-  text-align: center;
-  font-size: 35px;
-  color: white;
-}
-
-/* Cria duas colunas que ficam lado a lado */
-nav {
-  float: left;
-  width: 30%;
-  height: 300px;
-  background: #4fd687;
-  padding: 20px;
-}
-
-/* Estilizar a lista do menu */
-nav ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-article {
-  float: left;
-  padding: 20px;
-  width: 70%;
-  background-color: #f1f1f1;
-  height: 300px;
-}
-
-/* Limpa os floats após as colunas para evitar problemas de layout */
-section::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Estiliza o rodapé */
-footer {
-  background-color: #050f09;
-  padding: 10px;
-  text-align: center;
-  color: white;
-}
-
-/* Layout responsivo - faz as colunas se ajustarem em telas menores */
-@media (max-width: 600px) {
-  nav, article {
-    width: 100%;
-    height: auto;
-  }
-}
-</style>
 </head>
+
+<html>
 <body>
 
-<h2>Essa página é um exemplo da utilização de hospedagem de uma página com HTML e CSS</h2>
-<p>Neste exemplo, foi criado um cabeçalho, duas colunas distintas e um rodapé. Em telas menores, as colunas serão colocadas em linhas diferentes.</p>
-<p>Layout responsivo de janela para tamanhos de telas, personalização de seções e conteúdo de exemplo colocado.</p>
+<h1> Página de teste </h1>
+<h2>Cadastro usando HTML</h2>
 
-<header>
-  <h2>Página</h2>
-</header>
+<form action="descricao.html">
+  <label for="fname">Primeiro nome:</label><br>
+  <input type="text" id="fname" name="fname" value="Sejong"><br>
+  <label for="lname">Sobrenome:</label><br>
+  <input type="text" id="lname" name="lname" value="O Grande"><br><br>
+  <input type="submit" value="Continuar">
+</form> 
 
-<section>
-  <nav>
-    <ul>
-      <li><a href="#">Sejong, o Grande</a></li>
-      <li><a href="#">etc...</a></li>
-    </ul>
-  </nav>
-  
-  <article>
-    <h1>Sejong, o Grande</h1>
-    <p>Sejong, o Grande, foi o quarto rei da Dinastia Joseon da Coreia, governando de 1418 a 1450. Ele é amplamente reconhecido por sua contribuição monumental à cultura coreana, especialmente pela criação do hangul, o alfabeto coreano, que facilitou a alfabetização entre o povo.</p>
-    <p>Durate seu reinado, Sejong promoveu avanços significativos nas áreas de ciência, tecnologia e agricultura. Seu governo é lembrado como um período de floramento cultural, onde a literatura e as artes prosperaram, solidificando seu legado como um dos maiores líderes da história coreana.</p>
-    <form action="formulario.html">
-	    <input type="submit" value="Prosseguir">
-    </form> 
-
-  </article>
-</section>
-
-<footer>
-  <p>Para mais informações e acessar a referência deste artigo, acesse:
-  <p><a href="https://pt.wikipedia.org/wiki/Sejong,_o_Grande" style="color: blue; text-decoration: none;">Clique aqui</a>
-</p>
-</footer>
+<p>Ao apertar o botão de continuar, será redirecionado para uma segunda página de exemplo usando HTML.</p>
 
 </body>
 </html>
