@@ -9,7 +9,8 @@ body {
 header {
     font-size: 40px;
     font-family: "Poppins", sans-serif;
-    background-image: linear-gradient(to right, #5af09b, rgb(25, 248, 129));
+    /*background-image: linear-gradient(to right, #5af09b, ); */
+    background-image: linear-gradient(to right, rgb(25, 248, 129), #5af09b);
     padding: 20px;
     text-align: center;
     color: white;
@@ -18,12 +19,12 @@ header {
 .header-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: justify;
     align-items: center;
 }
 
 .logo {
-    width: 100px;
+    width: 240px;
     height: auto;
 }
 
@@ -33,6 +34,7 @@ header {
 
 .titulo {
     text-align: center;
+    justify-content: center;
     flex-grow: 1;
     color: #ffffff;
 }
@@ -108,7 +110,7 @@ main {
 }
 
 .right img {
-    max-width: 100%;
+    max-width: 90%;
     height: auto;
     display: block;
     margin: 0 auto;
@@ -157,6 +159,11 @@ font-size: 3.5em;
     color: aliceblue;
     background: #0f2210;
     text-align: center;
+}
+
+.base-direita h4{
+    font-size: 22px;
+    font-weight: normal;
 }
 
 .conteudo2 h3 {
